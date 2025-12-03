@@ -1,0 +1,169 @@
+.travel-guide-generator {
+  .generator-form {
+    margin-bottom: 24px;
+
+    .ant-form-item {
+      margin-bottom: 20px;
+    }
+
+    .ant-slider {
+      margin: 16px 0;
+    }
+
+    .ant-checkbox-group {
+      .ant-checkbox-wrapper {
+        display: block;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .ant-radio-group {
+      .ant-radio-wrapper {
+        display: block;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .generated-guide {
+    .guide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .ant-typography {
+        margin-bottom: 0;
+      }
+    }
+
+    .guide-overview {
+      margin-bottom: 24px;
+
+      .guide-stats {
+        .stat-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+          font-size: 14px;
+
+          .anticon {
+            margin-right: 8px;
+            color: #1890ff;
+          }
+        }
+      }
+    }
+
+    .activity-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .activity-tips {
+        margin-top: 8px;
+        padding: 8px 12px;
+        background-color: #fff7e6;
+        border-left: 3px solid #faad14;
+        border-radius: 4px;
+      }
+    }
+
+    .museum-service {
+      margin: 12px 0;
+      padding: 8px;
+      background-color: #f6f8fa;
+      border-radius: 4px;
+    }
+
+    .museum-highlights {
+      margin: 8px 0;
+      padding: 8px;
+      background-color: #f6ffed;
+      border-left: 3px solid #52c41a;
+      border-radius: 4px;
+    }
+
+    .museum-tips {
+      margin-top: 8px;
+
+      > div {
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .travel-guide-generator {
+    .generator-form {
+      .ant-col {
+        margin-bottom: 16px;
+      }
+    }
+
+    .generated-guide {
+      .guide-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .ant-space {
+          margin-top: 16px;
+        }
+      }
+
+      .activity-item {
+        .ant-row {
+          flex-direction: column;
+
+          .ant-col {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 打印样式
+@media print {
+  .travel-guide-generator {
+    .guide-header {
+      .ant-space {
+        display: none;
+      }
+    }
+
+    .ant-card {
+      border: none;
+      box-shadow: none;
+    }
+
+    .ant-divider {
+      border-color: #000;
+    }
+  }
+}
+
+// 加载动画优化
+.ant-spin-container {
+  min-height: 400px;
+}
+
+.ant-spin-spinning {
+  .ant-spin-blur {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "文博探索",
+  "short_name": "文博探索",
+  "display": "standalone",
+  "start_url": "./?utm_source=homescreen",
+  "theme_color": "#002140",
+  "background_color": "#001529",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any"
+    }
+  ]
+}
