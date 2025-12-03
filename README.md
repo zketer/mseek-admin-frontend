@@ -22,6 +22,7 @@
   <img src="./docs/images/image1.png" width="300" alt="仪表盘展示" style="margin: 0 10px;" />
   <img src="./docs/images/image2.png" width="300" alt="博物馆管理" style="margin: 0 10px;" />
   <img src="./docs/images/image3.png" width="300" alt="用户管理" style="margin: 0 10px;" />
+    <img src="./docs/images/image4.png" width="300" alt="系统概览" style="margin: 0 10px;" />
 </div>
 
 ---
